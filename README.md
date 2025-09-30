@@ -1,73 +1,34 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://lms.ebac.mx/lesson/91aaeead-c361-46c2-ba40-ea906b4d97af
 
-Currently, two official plugins are available:
+Paso a paso:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Crea un nuevo proyecto React con TypeScript usando create-react-app o Vite.
 
-## React Compiler
+Organiza las carpetas en una estructura lógica
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Identifica las secciones principales de la aplicación para migrarlas a React, incluyendo el Header, que contiene el título, el logotipo y el menú de navegación; el Formulario de Registro de Guías para ingresar información de nuevas guías; el Panel de Estado General, que ofrece un resumen del estado del sistema mostrando los contadores de guías activas, en tránsito y entregadas; la Lista de Guías, que despliega la información de cada guía junto con opciones para actualizar el estado y ver el historial.
 
-## Expanding the ESLint configuration
+Crea un componente para cada sección dentro de la carpeta components/
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Define los tipos en TS para los datos que maneja tu aplicación. Por ejemplo, crea una interfaz de TS para representar una guía.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Utiliza los hooks useState y useEffect para implementar las funcionalidades principales de la aplicación, incluyendo la gestión de estados locales, el control de efectos secundarios, y la sincronización de datos entre componentes para garantizar un comportamiento dinámico y reactivo. Por ejemplo (considera que puede variar):
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+const [guides, setGuides] = useState<Guide[]>([]); 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+const [history, setHistory] = useState<HistoryEntry[]>([]); 
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+useEffect(() => { console.log('El estado de guías ha cambiado:', guides); }, [guides]);
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Pasa las funciones necesarias como props entre los componentes.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Verifica que el registro de guías en el Formulario de Registro de Guías, la actualización de estados en la Lista de Guías, y la consulta del historial desde la Lista de Guías funcionen correctamente, asegurando que los cambios se reflejen también en el Panel de Estado General y que la aplicación sea coherente e intuitiva para el usuario
+
+
+¿Cómo presentar su entrega?
+
+Sube tus cambios a tu repositorio de Github y comparte tu link.
+
+Tiempo estimado de resolución: 240 minutos

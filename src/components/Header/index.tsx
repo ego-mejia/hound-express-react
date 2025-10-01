@@ -5,7 +5,8 @@ import lightLogo from "../../assets/logo--light.png"
 
 // Style
 import { Navbar,
-  Logo
+  Logo,
+  NavbarLinks
  } from "./style";
 
 
@@ -22,7 +23,7 @@ const Header = () => {
             alt="Hound Express logo"
           />
         </a>
-        <div class="navbar--right">
+        <NavbarLinks class="navbar--right">
           <ul>
             <li>
               <a href="#">Inicio</a>
@@ -40,6 +41,7 @@ const Header = () => {
               <a href="#">Historial</a>
             </li>
           </ul>
+
           <div class="search">
             <button class="search__button" onclick="buscar()">
               <img src="assets/search-icon.svg" alt="Buscar" />
@@ -51,7 +53,8 @@ const Header = () => {
               type="text"
             />
           </div>
-        </div>
+
+        </NavbarLinks>
       </Navbar>
     </>
   );

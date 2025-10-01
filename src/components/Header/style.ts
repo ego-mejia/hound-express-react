@@ -13,6 +13,37 @@ export const Navbar = styled.nav`
     
     width: 100%;
     height: 100px;
+
+  a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    p {
+      color: white;
+      font-size: 20px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      max-width: 530px;
+      width: 100%;
+      list-style: none;
+      display: flex;
+      
+      li {
+        display: inline;
+        
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 18px;
+        }
+      }
+    }
+
+
 `;
 
 export const Logo = styled.img`

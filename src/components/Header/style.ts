@@ -23,7 +23,15 @@ export const Navbar = styled.nav`
       color: white;
       font-size: 20px;
     }
-    ul {
+
+`;
+
+export const Logo = styled.img`
+  max-width: 271.98px;
+  width: 100%;
+`;
+
+export const NavbarLinks = styled.ul`
       display: flex;
       justify-content: space-between;
       max-width: 530px;
@@ -41,17 +49,9 @@ export const Navbar = styled.nav`
             font-size: 18px;
         }
       }
-    }
-
 
 `;
-
-export const Logo = styled.img`
-  max-width: 271.98px;
-  width: 100%;
-`;
-
-export const NavbarLinks = styled.div`
+export const RightContainer = styled.div`
         display: flex;
         max-width: 850px;
         width: 100%;

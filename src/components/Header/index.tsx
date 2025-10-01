@@ -1,7 +1,11 @@
 import React from "react";
 
+
 // Style
-import { Navbar } from "./style.js";
+import { Navbar } from "./style";
+
+
+
 const Header = () => {
   return (
     <>

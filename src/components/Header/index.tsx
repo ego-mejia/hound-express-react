@@ -4,7 +4,9 @@ import React from "react";
 import lightLogo from "../../assets/logo--light.png"
 
 // Style
-import { Navbar } from "./style";
+import { Navbar,
+  Logo
+ } from "./style";
 
 
 
@@ -15,9 +17,8 @@ const Header = () => {
       {/* <Navbar > class="navbar" */}
       <Navbar>
         <a href="./index.html">
-          <img
+          <Logo
             src={lightLogo}
-            class="navbar--logo"
             alt="Hound Express logo"
           />
         </a>

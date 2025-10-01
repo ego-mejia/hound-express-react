@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Navbar = styled.nav`
   background-color: red;
+  background-color: ${({ theme }) => theme.colors.primary};
+
+  
   position: fixed;
     z-index: 1000;
     top: 0;

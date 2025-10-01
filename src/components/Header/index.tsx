@@ -18,7 +18,6 @@ const Header = () => {
   return (
     <>
       <h1>Header</h1>
-      {/* <Navbar > class="navbar" */}
       <Navbar>
         <a href="./index.html">
           <Logo

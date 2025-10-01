@@ -4,12 +4,18 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+// Style
+import { ThemeProvider } from "styled-components";
+import { theme } from "./styles/theme";
+
 function App() {
   return (
     <>
-      <Header></Header>
-      {/* <Body>  </Body> */}
-      <Footer></Footer>
+      <ThemeProvider theme={theme}>
+        <Header></Header>
+        {/* <Body>  </Body> */}
+        <Footer></Footer>
+      </ThemeProvider>
     </>
   );
 }

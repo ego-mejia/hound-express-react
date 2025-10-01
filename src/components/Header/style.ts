@@ -58,3 +58,46 @@ export const RightContainer = styled.div`
         align-items: center;
         justify-content: space-between;
 `;
+
+export const SearchInput = styled.div`
+        /* background-color: fuchsia; */
+        
+        position: relative;
+        padding-right: 20px;
+        max-width: 280px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        input {
+            font-size: 14px;
+            padding: 8px;
+            padding-left: 56px;
+            border-radius: 5px;
+            border: 1px solid $border-gray;
+            width: 100%;
+            height: 40px;
+            outline: none;
+        
+            /* background-color: yellowgreen; */
+        }
+        
+        button {
+            position: absolute;
+            left: 20px;
+            // top: 20%;
+            margin-top: 3px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        
+            padding: 0;
+            border: none;
+            
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+`;

@@ -2,12 +2,14 @@ import React from "react";
 
 // Files
 import lightLogo from "../../assets/logo--light.png"
+import searchIcon from "../../assets/search-icon.svg"
 
 // Style
 import { Navbar,
   Logo,
   NavbarLinks,
-  RightContainer
+  RightContainer,
+  SearchInput
  } from "./style";
 
 
@@ -24,7 +26,8 @@ const Header = () => {
             alt="Hound Express logo"
           />
         </a>
-        <RightContainer class="navbar--right">
+        <RightContainer>
+
           <NavbarLinks>
             <li>
               <a href="#">Inicio</a>
@@ -43,17 +46,16 @@ const Header = () => {
             </li>
           </NavbarLinks>
 
-          <div class="search">
-            <button class="search__button" onclick="buscar()">
-              <img src="assets/search-icon.svg" alt="Buscar" />
+          <SearchInput >
+            <button onclick="buscar()">
+              <img src={searchIcon} alt="Buscar" />
             </button>
             <input
-              class="search__input"
               id="search"
               placeholder="Ingresar número de rastreo"
               type="text"
             />
-          </div>
+          </SearchInput>
 
         </RightContainer>
       </Navbar>

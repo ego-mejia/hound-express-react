@@ -46,7 +46,7 @@ const Header = () => {
             </li>
           </NavbarLinks>
 
-          <SearchInput >
+          <SearchInput>
             <button onclick="buscar()">
               <img src={searchIcon} alt="Buscar" />
             </button>

@@ -48,7 +48,7 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const TrackingForm = styled.div`
+export const TrackFormContainer = styled.div`
 margin-top: 45px;
     position: relative;
     z-index: 10;
@@ -79,4 +79,7 @@ margin-top: 45px;
         cursor: pointer;
         font-size: clamp(14px, 3vw, 18px);
     }
+`;
+
+export const TrackInputWrapper = styled.div`
 `;

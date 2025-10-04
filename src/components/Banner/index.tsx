@@ -1,5 +1,5 @@
 // Style
-import { Main, Wrapper, TrackingForm } from "./style";
+import { Main, Wrapper, TrackFormContainer, TrackInputWrapper } from "./style";
 
 // Assets
 import bannerImg from "../../assets/contendor-carga-mapa-tierra.png";
@@ -20,17 +20,17 @@ const Banner = () => {
             Usamos tecnología de última generación para que tengas el control de
             tu operación en tiempo real.
           </p>
-          <TrackingForm
+          <TrackFormContainer
           // class="banner__form-container"
           >
             <h3>Rastree su Envío</h3>
-            <div
+            <TrackInputWrapper
             //   class="track-package"
             >
               <input type="text" placeholder="Ingresar número de rastreo" />
               <button>Rastrear</button>
-            </div>
-          </TrackingForm>
+            </TrackInputWrapper>
+          </TrackFormContainer>
           <img
             //   class="banner--img"
             src={bannerImg}

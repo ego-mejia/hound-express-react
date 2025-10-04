@@ -1,8 +1,9 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Banner from "./components/Banner";
 
 // Style
 import { ThemeProvider } from "styled-components";
@@ -13,9 +14,10 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-      <GlobalStyle />
+        <GlobalStyle />
 
         <Header></Header>
+        <Banner></Banner>
         {/* <Body>  </Body> */}
         <Footer></Footer>
       </ThemeProvider>

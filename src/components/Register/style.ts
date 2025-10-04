@@ -114,15 +114,33 @@ export const FormElement = styled.form`
     } */
 `;
 
-// /* Para eliminar el icono predeterminado de chromo para calendario. */
-// .date-selector::-webkit-calendar-picker-indicator {
-//     display: none;
-//   }
+export const DateSelectorInput = styled.input`
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: black;
+    
+    /* Para eliminar el icono predeterminado de chromo para calendario. */ 
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        cursor: pointer; 
+        position: absolute;
+        right: 15px; // ! right: 0;
+    }
+    &::-webkit-datetime-edit {
+        color: ${({ theme }) => theme.colors.placeholderText};
+    }
 
-// input[type="date"]::-webkit-datetime-edit {
-//     color: $placeholder-text;
-//     }
-  
+`;
+
+
+
+export const FormIcon = styled.img`
+    position: absolute;
+    width: 14px;
+    bottom: 15px;
+    right: 15px;
+`;
 
 
 

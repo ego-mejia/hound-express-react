@@ -8,6 +8,8 @@ import {
   FormElement,
   FormContainerRight,
   StateDateFlexbox,
+  FormIcon,
+  DateSelectorInput,
 } from "./style";
 
 // Assets
@@ -66,7 +68,7 @@ const Register = () => {
                 // class="state-date-flex"
                 >
                   <FormElement>
-                    <img
+                    <FormIcon
                       // class="form-icon"
                       src={icons.topDownArrows}
                       alt=""
@@ -89,13 +91,13 @@ const Register = () => {
                     </select>
                   </FormElement>
                   <FormElement>
-                    <img
+                    <FormIcon
                       // class="form-icon"
                       src={icons.calendar}
                       alt=""
                     />
                     <h4>Fecha</h4>
-                    <input
+                    <DateSelectorInput
                       // class="date-selector"
                       type="date"
                     />

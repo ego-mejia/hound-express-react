@@ -46,6 +46,16 @@ export const Wrapper = styled.div`
         /* font-size: 24px; */
         font-size: clamp(18px, 2vw, 24px);
     }
+
+    img{
+        z-index: 9;
+        max-width: 708.42px;
+        position:absolute;
+        width: 60vw;
+        bottom: -74.24px;
+        transform: rotate(-7deg);
+        right: -80px;
+    }
 `;
 
 export const TrackFormContainer = styled.div`

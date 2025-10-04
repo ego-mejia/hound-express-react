@@ -1,9 +1,10 @@
-import { FooterContainer } from "./style";
+import { FooterContainer, FooterWrapper } from "./style";
+import { lightLogo }
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <div class="wrapper">
+      <FooterWrapper>
         <a class="footer-logo-link" href="./index.html">
           <img
             src="./assets/logo--light.png"
@@ -29,7 +30,7 @@ const Footer = () => {
             <p>Aviso de Privacidad</p>
           </div>
         </div>
-      </div>
+      </FooterWrapper>
     </FooterContainer>
   );
 };

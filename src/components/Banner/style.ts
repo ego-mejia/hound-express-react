@@ -5,7 +5,7 @@ export const Main = styled.section`
 
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
     position: relative;
     /* padding-top: 50px; */
     align-items: center;

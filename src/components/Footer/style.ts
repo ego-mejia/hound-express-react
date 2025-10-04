@@ -3,16 +3,9 @@ import styled from "styled-components";
 // Mixins
 import { bgDebug } from "../../styles/mixins";
 
-//Theme
-import type { ThemeType } from "../../styles/theme";
-const backgroundColor = (props: { theme: ThemeType }) => props.theme.colors.darkBlue;
-
 
 export const FooterContainer = styled.footer`
-    ${bgDebug(
-        backgroundColor, // color real dinámico desde theme
-        "magenta"                               // color de debug
-    )};
+    ${bgDebug("darkBlue","magenta")};
 
     color: white;
     padding: 40px 80px;
@@ -38,7 +31,6 @@ export const FooterWrapper = styled.div`
 export const LogoLink = styled.a`
     ${bgDebug("transparent", "magenta")};
 
-    
     max-width: 151.62px;
     width: 100%;
     cursor: pointer;
@@ -51,9 +43,8 @@ export const LogoLink = styled.a`
 
 export const FooterTextContainer = styled.div`
     ${bgDebug("transparent", "green")};
-    
     display: flex;
-    flex-direction: row; //!row??
+    flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
 

@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-
+import type { ThemeType } from "./theme";
 /**
  * 🎨 Mixin Wrapper Reutilizable
  * Contenedor base para secciones o layouts
@@ -44,15 +44,11 @@ export const wrapperMixin = css`
  * @param normalColor Color normal del background
  * @param debugColor Color de debug cuando theme.debug = true
  */
-type ColorParam = string | ((props: any) => string);
-
-export const bgDebug = (normalColor: ColorParam, debugColor: ColorParam) => css`
-  background-color: ${({ theme, ...props }) =>
-    theme.debug
-      ? typeof debugColor === "function"
-        ? debugColor({ theme, ...props })
-        : debugColor
-      : typeof normalColor === "function"
-      ? normalColor({ theme, ...props })
-      : normalColor};
+// mixins.ts
+export const bgDebug = (
+  colorKey: keyof ThemeType["colors"],
+  debugColor: string
+) => css`
+  background-color: ${({ theme }) =>
+    theme.debug ? debugColor : theme.colors[colorKey]};
 `;

@@ -17,6 +17,7 @@ export const theme = {
         secondary: "#1DB954",
         background: "#f5f5f5",
         text: "#333",
+        transparent: "transparent",
 
         // 🏓 Table
         table: {

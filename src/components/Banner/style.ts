@@ -82,4 +82,6 @@ margin-top: 45px;
 `;
 
 export const TrackInputWrapper = styled.div`
+    position: relative;
+
 `;

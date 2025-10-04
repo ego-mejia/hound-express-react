@@ -1,6 +1,6 @@
 // src/styles/theme.ts
 export const theme = {
-    debug: false, // 👈 true activa los colores de debug
+    debug: true, // 👈 true activa los colores de debug
 
     // 🎨 Colors
     colors: {

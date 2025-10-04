@@ -3,7 +3,7 @@ import { bgDebug } from "../../styles/mixins";
 
 export const RegisterSection = styled.section`
     ${bgDebug('transparent','khaki')};
-    /* padding: 0 80px; */
+    padding: 0 80px;
     ;
     `;
 

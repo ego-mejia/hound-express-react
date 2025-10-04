@@ -5,7 +5,7 @@ import { bgDebug } from "../../styles/mixins";
 
 
 export const GeneralSection = styled.section`
-    /* padding: 0 80px; */
+    padding: 0 80px;
 
 `;
 export const GeneralWrapper = styled.div`

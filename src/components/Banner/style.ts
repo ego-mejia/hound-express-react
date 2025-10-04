@@ -1,8 +1,11 @@
 import styled from "styled-components";
-import { wrapperMixin } from "../../styles/mixins";
+
+// Mixins
+import { wrapperMixin, bgDebug } from "../../styles/mixins";
 
 export const Main = styled.section`
-    background-color: magenta;
+    ${bgDebug('transparent','magenta')};
+
 
     display: flex;
     flex-direction: column;
@@ -22,7 +25,8 @@ export const Main = styled.section`
 
 export const Wrapper = styled.div`
     ${wrapperMixin};
-    /* background-color: red; */
+    ${bgDebug('transparent','red')};
+
     h1{
         max-width: 980px;
         font-weight:800;

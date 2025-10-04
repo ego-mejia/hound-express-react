@@ -12,12 +12,12 @@ export const GeneralWrapper = styled.div`
     ${bgDebug('transparent','greenyellow')};
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     padding-top: 60px;
     margin: 0 auto;
     `;
-    
+
 export const CardsContainer = styled.div`
     ${bgDebug('transparent','fuchsia')};
     display: flex;

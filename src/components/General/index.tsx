@@ -1,29 +1,37 @@
-import React from "react";
+// import React from "react";
+
+// Style
+import {
+  GeneralSection,
+  GeneralWrapper,
+  CardsContainer,
+  Card,
+  Value,
+  Title,
+} from "./style";
 
 const General = () => {
   return (
     <>
-      {/* <!-- start of General section --> */}
-      <section class="general">
-        <div class="wrapper">
+      <GeneralSection>
+        <GeneralWrapper>
           <h3>Panel de estado general</h3>
-          <div class="cards-container">
-            <div class="card">
-              <p class="value">521</p>
-              <p class="title">Guías activas</p>
-            </div>
-            <div class="card">
-              <p class="value">131</p>
-              <p class="title">Guías en tránsito</p>
-            </div>
-            <div class="card">
-              <p class="value">74</p>
-              <p class="title">Guías entregadas</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!-- end of General section --> */}
+          <CardsContainer>
+            <Card>
+              <Value>521</Value>
+              <Title>Guías activas</Title>
+            </Card>
+            <Card>
+              <Value>131</Value>
+              <Title>Guías en tránsito</Title>
+            </Card>
+            <Card>
+              <Value>74</Value>
+              <Title>Guías entregadas</Title>
+            </Card>
+          </CardsContainer>
+        </GeneralWrapper>
+      </GeneralSection>
     </>
   );
 };

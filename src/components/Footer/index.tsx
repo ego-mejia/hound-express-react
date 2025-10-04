@@ -1,17 +1,23 @@
-import { FooterContainer, FooterWrapper } from "./style";
+// Style
+import { FooterContainer, FooterWrapper, LogoLink } from "./style";
+
+// Assets
 import { logos, icons } from "../../assets";
 
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <a class="footer-logo-link" href="./index.html">
+        <LogoLink
+        // class="footer-logo-link"
+        // href="./index.html"
+        >
           <img
             src={logos.lightLogo}
-            class="footer-logo"
+            // class="footer-logo"
             alt="Hound Express logo"
           />
-        </a>
+        </LogoLink>
         <div class="text-container">
           <div>
             <p>

@@ -1,5 +1,6 @@
 // Components
 import Banner from "../../components/Banner";
+import General from "../../components/General";
 import Register from "../../components/Register";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <>
       <Banner />
       <Register />
+      <General />
     </>
   );
 };

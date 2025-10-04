@@ -3,9 +3,14 @@ import styled from "styled-components";
 // Mixins
 import { bgDebug } from "../../styles/mixins";
 
+//Theme
+import type { ThemeType } from "../../styles/theme";
+const backgroundColor = (props: { theme: ThemeType }) => props.theme.colors.darkBlue;
+
+
 export const FooterContainer = styled.footer`
     ${bgDebug(
-        (props) => props.theme.colors.darkBlue, // color real dinámico desde theme
+        backgroundColor, // color real dinámico desde theme
         "magenta"                               // color de debug
     )};
 

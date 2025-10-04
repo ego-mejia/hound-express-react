@@ -130,9 +130,16 @@ export const DateSelectorInput = styled.input`
     &::-webkit-datetime-edit {
         color: ${({ theme }) => theme.colors.placeholderText};
     }
-
 `;
-
+    
+export const StatusSelector = styled.select`
+  /* Usa una función para determinar el color, basándose en una prop llamada 'hasSelection' */
+  color: ${({ theme, hasSelection }) =>
+    hasSelection
+      ? theme.colors.darkBlue // Color si SÍ hay una selección real
+      : theme.colors.placeholderText // Color si NO hay una selección (placeholder)
+  };
+`;
 
 
 export const FormIcon = styled.img`

@@ -1,4 +1,4 @@
-// import React from "react";
+import React, { useState } from "react";
 // Style
 import { RegisterSection, RegisterWrapper } from "./style";
 import {
@@ -10,12 +10,19 @@ import {
   StateDateFlexbox,
   FormIcon,
   DateSelectorInput,
+  StatusSelector,
 } from "./style";
 
 // Assets
 import { imgs, icons } from "../../assets";
 
 const Register = () => {
+  const [selectedValue, setSelectedValue] = useState("");
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
+  const hasSelection = selectedValue !== "" && selectedValue !== "Seleccionar";
+
   return (
     <>
       {/* <!-- Start of Register section --> */}
@@ -74,21 +81,18 @@ const Register = () => {
                       alt=""
                     />
                     <h4>Estado</h4>
-                    <select
+                    <StatusSelector
                       // class="state-selector"
                       name="choice"
+                      value={selectedValue}
+                      onChange={handleChange}
+                      hasSelection={hasSelection}
                     >
-                      <option
-                        // class="default-option"
-                        value="default"
-                        selected
-                      >
-                        Seleccionar
-                      </option>
+                      <option value="">Seleccionar</option>
                       <option value="first">Pendiente</option>
                       <option value="second">En tránsito</option>
                       <option value="third">Entregado</option>
-                    </select>
+                    </StatusSelector>
                   </FormElement>
                   <FormElement>
                     <FormIcon

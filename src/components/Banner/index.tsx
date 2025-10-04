@@ -2,7 +2,7 @@
 import { Main, Wrapper, TrackFormContainer, TrackInputWrapper } from "./style";
 
 // Assets
-import bannerImg from "../../assets/contendor-carga-mapa-tierra.png";
+import { imgs } from "../../assets";
 
 const Banner = () => {
   return (
@@ -33,7 +33,7 @@ const Banner = () => {
           </TrackFormContainer>
           <img
             //   class="banner--img"
-            src={bannerImg}
+            src={imgs.earthContainer}
             alt="Imagen de contenedor de carga"
           />
         </Wrapper>

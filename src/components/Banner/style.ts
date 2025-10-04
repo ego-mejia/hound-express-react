@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { wrapperMixin } from "../../styles/mixins";
 
 export const Main = styled.section`
     background-color: magenta;
@@ -20,16 +21,7 @@ export const Main = styled.section`
 `;
 
 export const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    max-width: 1400px;
-    /* height: 720px; */
-    width: 100%;
-    height: 100%;
-    /* height: 73vh; */
-    position: relative;
-    padding-top: 60px;
-    gap:10px;
+    ${wrapperMixin}
     /* background-color: red; */
     h1{
         max-width: 980px;

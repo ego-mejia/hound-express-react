@@ -1,5 +1,5 @@
 import { FooterContainer, FooterWrapper } from "./style";
-import { lightLogo }
+import { logos, icons } from "../../assets";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
       <FooterWrapper>
         <a class="footer-logo-link" href="./index.html">
           <img
-            src="./assets/logo--light.png"
+            src={logos.lightLogo}
             class="footer-logo"
             alt="Hound Express logo"
           />
@@ -22,9 +22,9 @@ const Footer = () => {
             <p>Contacto: +52(55) 4000 1920</p>
           </div>
           <div class="social-icons--container">
-            <img class="social-icon" src="./assets/facebook-icon.svg" alt="" />
-            <img class="social-icon" src="./assets/linkedin-icon.svg" alt="" />
-            <img class="social-icon" src="./assets/instagram-icon.svg" alt="" />
+            <img class="social-icon" src={icons.facebook} alt="" />
+            <img class="social-icon" src={icons.linkedin} alt="" />
+            <img class="social-icon" src={icons.instagram} alt="" />
           </div>
           <div>
             <p>Aviso de Privacidad</p>

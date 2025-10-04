@@ -132,7 +132,14 @@ export const DateSelectorInput = styled.input`
     }
 `;
     
-export const StatusSelector = styled.select`
+
+// 1. Define la interfaz de tus propiedades
+interface StatusSelectorProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+  hasSelection: boolean;
+}
+
+
+export const StatusSelector = styled.select<StatusSelectorProps>`
   /* Usa una función para determinar el color, basándose en una prop llamada 'hasSelection' */
   color: ${({ theme, hasSelection }) =>
     hasSelection

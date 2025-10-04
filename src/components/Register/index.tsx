@@ -14,11 +14,11 @@ import {
 } from "./style";
 
 // Assets
-import { imgs, icons } from "../../assets";
+import { icons } from "../../assets";
 
 const Register = () => {
   const [selectedValue, setSelectedValue] = useState("");
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedValue(event.target.value);
   };
   const hasSelection = selectedValue !== "" && selectedValue !== "Seleccionar";

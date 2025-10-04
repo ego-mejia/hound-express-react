@@ -35,6 +35,15 @@ export const GlobalStyle = createGlobalStyle`
   button {
     font-family: inherit;
     cursor: pointer;
+
+    background-color: ${({ theme }) => theme.colors.darkBlue};
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 0px 22px;
+    height: 100%;
+    border: none;
+}
   }
 
   ul, ol {

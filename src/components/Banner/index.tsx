@@ -1,6 +1,9 @@
 // Style
 import { Main, Wrapper, TrackingForm } from "./style";
 
+// Assets
+import bannerImg from "../../assets/contendor-carga-mapa-tierra.png";
+
 const Banner = () => {
   return (
     <>
@@ -30,7 +33,7 @@ const Banner = () => {
           </TrackingForm>
           <img
             //   class="banner--img"
-            src="./assets/contendor-carga-mapa-tierra.png"
+            src={bannerImg}
             alt="Imagen de contenedor de carga"
           />
         </Wrapper>

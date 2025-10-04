@@ -10,6 +10,9 @@ import {
   StateDateFlexbox,
 } from "./style";
 
+// Assets
+import { imgs, icons } from "../../assets";
+
 const Register = () => {
   return (
     <>
@@ -65,7 +68,7 @@ const Register = () => {
                   <FormElement>
                     <img
                       // class="form-icon"
-                      src="./assets/code-icon.svg"
+                      src={icons.topDownArrows}
                       alt=""
                     />
                     <h4>Estado</h4>
@@ -88,7 +91,7 @@ const Register = () => {
                   <FormElement>
                     <img
                       // class="form-icon"
-                      src="./assets/calendar-icon.svg"
+                      src={icons.calendar}
                       alt=""
                     />
                     <h4>Fecha</h4>

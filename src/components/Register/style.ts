@@ -61,14 +61,14 @@ export const StateDateFlexbox = styled.form`
     }    */
 `;
 export const FormElement = styled.form`
-    max-width: 225px;
+    ${bgDebug('transparent','blue')};
 
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
 
-    /* background-color: cyan; */
+
     input {
         max-width: 412px;
         width: 100%;
@@ -133,7 +133,7 @@ export const DateSelectorInput = styled.input`
 `;
     
 
-// 1. Define la interfaz de tus propiedades
+//Define la interfaz de tus propiedades
 interface StatusSelectorProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   hasSelection: boolean;
 }

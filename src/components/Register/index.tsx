@@ -1,6 +1,14 @@
 // import React from "react";
 // Style
 import { RegisterSection, RegisterWrapper } from "./style";
+import {
+  RegisterForm,
+  FormContainer,
+  FormContainerLeft,
+  FormElement,
+  FormContainerRight,
+  StateDateFlexbox,
+} from "./style";
 
 const Register = () => {
   return (
@@ -14,68 +22,92 @@ const Register = () => {
         >
           <h3>Registro de Guias</h3>
 
-          <form class="register__form" action="">
-            <div class="form-container">
-              {/* <!-- Start of left side form --> */}
-              <div class="form--left">
-                <div class="form--element">
+          <RegisterForm
+            //  class="register__form"
+            action=""
+          >
+            <FormContainer
+            //  class="form-container"
+            >
+              <FormContainerLeft
+              //  class="form--left"
+              >
+                <FormElement
+                //  class="form--element"
+                >
                   <h4>Número de guía</h4>
                   <input type="text" placeholder="1234567890" />
-                </div>
-                <div class="form--element">
+                </FormElement>
+
+                <FormElement
+                //  class="form--element"
+                >
                   <h4>Destinatario</h4>
                   <input type="text" placeholder="José Lopez" />
-                </div>
+                </FormElement>
 
-                <div class="form--element">
+                <FormElement
+                //  class="form--element"
+                >
                   <h4>Origen</h4>
                   <input type="text" placeholder="País" />
                   <input type="text" placeholder="Dirección" />
                   <input type="text" placeholder="Zip" />
-                </div>
-              </div>
-              {/* <!-- end of left side form --> */}
+                </FormElement>
+              </FormContainerLeft>
 
-              {/* <!-- Start of righ side form --> */}
-              {/* <div class="form--right">
-                <div class="state-date-flex">
-                  <div class="form--element">
+              <FormContainerRight
+              //  class="form--right"
+              >
+                <StateDateFlexbox
+                // class="state-date-flex"
+                >
+                  <FormElement>
                     <img
-                      class="form-icon"
+                      // class="form-icon"
                       src="./assets/code-icon.svg"
                       alt=""
                     />
                     <h4>Estado</h4>
-                    <select class="state-selector" name="choice">
-                      <option class="default-option" value="default" selected>
+                    <select
+                      // class="state-selector"
+                      name="choice"
+                    >
+                      <option
+                        // class="default-option"
+                        value="default"
+                        selected
+                      >
                         Seleccionar
                       </option>
                       <option value="first">Pendiente</option>
                       <option value="second">En tránsito</option>
                       <option value="third">Entregado</option>
                     </select>
-                  </div>
-                  <div class="form--element">
+                  </FormElement>
+                  <FormElement>
                     <img
-                      class="form-icon"
+                      // class="form-icon"
                       src="./assets/calendar-icon.svg"
                       alt=""
                     />
                     <h4>Fecha</h4>
-                    <input class="date-selector" type="date" />
-                    <!-- <input type="text" placeholder="DD/MM/YYYY" id="datepicker" /> -->
-                  </div>
-                </div>
-                <div class="form--element">
+                    <input
+                      // class="date-selector"
+                      type="date"
+                    />
+                    {/* <input type="text" placeholder="DD/MM/YYYY" id="datepicker" /> */}
+                  </FormElement>
+                </StateDateFlexbox>
+                <FormElement>
                   <h4>Destino</h4>
                   <input type="text" placeholder="País" />
                   <input type="text" placeholder="Dirección" />
                   <input type="text" placeholder="Zip" />
-                </div>
-              </div> */}
-              {/* <!-- end of right side form --> */}
-            </div>
-          </form>
+                </FormElement>
+              </FormContainerRight>
+            </FormContainer>
+          </RegisterForm>
         </RegisterWrapper>
       </RegisterSection>
       {/* <!-- end of Register section --> */}

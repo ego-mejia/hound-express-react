@@ -1,9 +1,11 @@
 // import { useState } from "react";
 
+// Pages
+import Home from "./pages/Home";
+
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Banner from "./components/Banner";
 
 // Style
 import { ThemeProvider } from "styled-components";
@@ -16,10 +18,9 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
 
-        <Header></Header>
-        <Banner></Banner>
-
-        <Footer></Footer>
+        <Header />
+        <Home />
+        <Footer />
       </ThemeProvider>
     </>
   );

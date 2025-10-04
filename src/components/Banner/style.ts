@@ -22,18 +22,19 @@ export const Main = styled.section`
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1400px;
     /* height: 720px; */
     width: 100%;
     height: 100%;
     /* height: 73vh; */
     position: relative;
     padding-top: 60px;
+    gap:10px;
     /* background-color: red; */
     h1{
         max-width: 980px;
         font-weight:800;
-        font-size: 71.8px;
+        /* font-size: 71.8px; */
         line-height: 100%;
         
         font-size: clamp(40px, 4vw, 71.8px);
@@ -43,7 +44,6 @@ export const Wrapper = styled.div`
         font-weight:normal;
         line-height: 140%;
     
-        /* font-size: 24px; */
         font-size: clamp(18px, 2vw, 24px);
     }
 
@@ -59,7 +59,7 @@ export const Wrapper = styled.div`
 `;
 
 export const TrackFormContainer = styled.div`
-margin-top: 45px;
+    margin-top: 35px;
     position: relative;
     z-index: 10;
     max-width: 513px;
@@ -75,7 +75,6 @@ margin-top: 45px;
         padding-left: 16px;
         border-style: none;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
         outline: none;
     }
     

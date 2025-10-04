@@ -11,7 +11,7 @@ export const RegisterWrapper = styled.div`
     ${bgDebug('transparent','greenyellow')};
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     width: 100%;
     padding-top: 45px;
@@ -23,7 +23,7 @@ display: flex;
 flex-direction: column;
 margin-top: 22px;
 h4{
-    color: $medium-gray;
+    /* color: $medium-gray; */
     font-size: 14px;
 }
 `;

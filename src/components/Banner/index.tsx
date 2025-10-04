@@ -1,5 +1,5 @@
 // Style
-import { Main, Wrapper } from "./style";
+import { Main, Wrapper, TrackingForm } from "./style";
 
 const Banner = () => {
   return (
@@ -17,7 +17,7 @@ const Banner = () => {
             Usamos tecnología de última generación para que tengas el control de
             tu operación en tiempo real.
           </p>
-          <div
+          <TrackingForm
           // class="banner__form-container"
           >
             <h3>Rastree su Envío</h3>
@@ -27,7 +27,7 @@ const Banner = () => {
               <input type="text" placeholder="Ingresar número de rastreo" />
               <button>Rastrear</button>
             </div>
-          </div>
+          </TrackingForm>
           <img
             //   class="banner--img"
             src="./assets/contendor-carga-mapa-tierra.png"

@@ -47,3 +47,36 @@ export const Wrapper = styled.div`
         font-size: clamp(18px, 2vw, 24px);
     }
 `;
+
+export const TrackingForm = styled.div`
+margin-top: 45px;
+    position: relative;
+    z-index: 10;
+    max-width: 513px;
+    width: 100%;
+    /* background-color: fuchsia; */
+    input{
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        /* font-size: 18px; */
+        font-size: clamp(14px, 3vw, 18px);
+        color: $medium-gray;
+        padding-left: 16px;
+        border-style: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+        outline: none;
+    }
+    
+    h3{
+        font-size: 24px;
+        
+    }
+    button{
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        font-size: clamp(14px, 3vw, 18px);
+    }
+`;

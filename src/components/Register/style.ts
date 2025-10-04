@@ -80,7 +80,7 @@ export const FormElement = styled.form`
         
         padding-left: 20px;
         font-size: 14px;
-        border: 1px solid $border-gray;
+        border: 1px solid ${({ theme }) => theme.colors.borderGray};
         outline: none;
         margin-bottom: 5px;
 
@@ -98,7 +98,7 @@ export const FormElement = styled.form`
 
         border-style: none;
         border-radius: 5px;
-        border: 1px solid $border-gray;
+        border: 1px solid ${({ theme }) => theme.colors.borderGray};
         color: $dark-blue;
         outline: none;
         font-size: 14px;

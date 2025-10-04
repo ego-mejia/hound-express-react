@@ -26,10 +26,10 @@ export const theme = {
         buttonHover: "#218838",
         },
   },
-//   FONTS
+  // 🎨 FONTS
   fonts: {
-    body: "'Roboto', sans-serif",
-    heading: "'Poppins', sans-serif",
+    body: "'Open Sans', sans-serif",
+    heading: "'Poppins', sans-serif", // puedes usar otra para títulos
   },
 
     // 📱 Breakpoints

@@ -14,13 +14,19 @@ export const GlobalStyle = createGlobalStyle`
     }
 
   body {
-    font-family: 'Open Sans', sans-serif;
-  }
+      font-family: ${({ theme }) => theme.fonts.body};
+      background-color: ${({ theme }) => theme.colors.background};
+      color: ${({ theme }) => theme.colors.text};
+    }
 
-  h3{
-    font-size: 24px;
-    color: $dark-blue;
+    h1, h2, h3, h4, h5, h6 {
+      font-family: ${({ theme }) => theme.fonts.heading};
+      color: ${({ theme }) => theme.colors.darkBlue};
+    }
 
+    h3 {
+      font-size: 24px;
+      color: ${({ theme }) => theme.colors.darkBlue};
     }
 
     input::placeholder{
@@ -35,7 +41,6 @@ export const GlobalStyle = createGlobalStyle`
   button {
     font-family: inherit;
     cursor: pointer;
-
     background-color: ${({ theme }) => theme.colors.darkBlue};
     font-size: 18px;
     font-weight: bold;
@@ -43,7 +48,6 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0px 22px;
     height: 100%;
     border: none;
-}
   }
 
   ul, ol {

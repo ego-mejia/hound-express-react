@@ -4,8 +4,10 @@ import styled from "styled-components";
 import { bgDebug } from "../../styles/mixins";
 
 export const FooterContainer = styled.footer`
-    ${bgDebug(${({ theme }) => theme.colors.darkBlue}, "magenta")};
-
+    ${bgDebug(
+        (props) => props.theme.colors.darkBlue, // color real dinámico desde theme
+        "magenta"                               // color de debug
+    )};
 
     color: white;
     padding: 40px 80px;

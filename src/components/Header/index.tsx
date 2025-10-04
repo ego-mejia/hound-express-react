@@ -1,8 +1,7 @@
 // import React from "react";
 
-// Files
-import lightLogo from "../../assets/logo--light.png";
-import searchIcon from "../../assets/search-icon.svg";
+// Assets
+import { icons, logos } from "../../assets";
 
 // Style
 import {
@@ -19,7 +18,7 @@ const Header = () => {
       <h1>Header</h1>
       <Navbar>
         <a href="./index.html">
-          <Logo src={lightLogo} alt="Hound Express logo" />
+          <Logo src={logos.lightLogo} alt="Hound Express logo" />
         </a>
         <RightContainer>
           <NavbarLinks>
@@ -41,8 +40,10 @@ const Header = () => {
           </NavbarLinks>
 
           <SearchInput>
-            <button onclick="buscar()">
-              <img src={searchIcon} alt="Buscar" />
+            <button
+            // onclick="buscar()"
+            >
+              <img src={icons.search} alt="Buscar" />
             </button>
             <input
               id="search"

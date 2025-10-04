@@ -18,7 +18,7 @@ function App() {
 
         <Header></Header>
         <Banner></Banner>
-        {/* <Body>  </Body> */}
+
         <Footer></Footer>
       </ThemeProvider>
     </>

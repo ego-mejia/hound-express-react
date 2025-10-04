@@ -1,7 +1,9 @@
+import { Footer } from "./style";
+
 const Footer = () => {
   return (
     <>
-      <footer>
+      <Footer>
         <div class="wrapper">
           <a class="footer-logo-link" href="./index.html">
             <img
@@ -41,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </Footer>
     </>
   );
 };

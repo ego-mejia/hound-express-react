@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
+// Mixins
+import { bgDebug } from "../../styles/mixins";
+
 export const FooterContainer = styled.footer`
-    background-color: ${({ theme }) => theme.colors.darkBlue};
-    background-color: red;
+    ${bgDebug(${({ theme }) => theme.colors.darkBlue}, "magenta")};
+
+
     color: white;
     padding: 40px 80px;
 
@@ -13,7 +17,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrapper = styled.div`
-    background-color: yellow;
+    ${bgDebug("transparent", "yellow")};
 
     display: flex;
     flex-direction: row; /* Alinea los elementos en una fila */
@@ -25,7 +29,8 @@ export const FooterWrapper = styled.div`
 `;
 
 export const LogoLink = styled.a`
-    background-color: magenta;
+    ${bgDebug("transparent", "magenta")};
+
     
     max-width: 151.62px;
     width: 100%;
@@ -38,7 +43,8 @@ export const LogoLink = styled.a`
 `;
 
 export const FooterTextContainer = styled.div`
-    background-color: green;
+    ${bgDebug("transparent", "green")};
+    
     display: flex;
     flex-direction: row; //!row??
     gap: 10px;

@@ -37,3 +37,22 @@ export const wrapperMixin = css`
     gap: 8px;
   } */
 `;
+
+/**
+ * 🔹 bgDebug
+ * Aplica un background dinámico según la variable `theme.debug`
+ * @param normalColor Color normal del background
+ * @param debugColor Color de debug cuando theme.debug = true
+ */
+type ColorParam = string | ((props: any) => string);
+
+export const bgDebug = (normalColor: ColorParam, debugColor: ColorParam) => css`
+  background-color: ${({ theme, ...props }) =>
+    theme.debug
+      ? typeof debugColor === "function"
+        ? debugColor({ theme, ...props })
+        : debugColor
+      : typeof normalColor === "function"
+      ? normalColor({ theme, ...props })
+      : normalColor};
+`;

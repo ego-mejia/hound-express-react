@@ -1,6 +1,8 @@
 // src/styles/theme.ts
 export const theme = {
-    // COLORS
+    debug: true, // 👈 true activa los colores de debug
+
+    // 🎨 Colors
     colors: {
         // 🎨 Colores principales
         darkBlue: "#171138",

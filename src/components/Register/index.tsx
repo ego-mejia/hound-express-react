@@ -1,11 +1,17 @@
 // import React from "react";
+// Style
+import { RegisterSection, RegisterWrapper } from "./style";
 
 const Register = () => {
   return (
     <>
       {/* <!-- Start of Register section --> */}
-      <section class="register">
-        <div class="wrapper">
+      <RegisterSection
+      //  class="register"
+      >
+        <RegisterWrapper
+        //  class="wrapper"
+        >
           <h3>Registro de Guias</h3>
 
           <form class="register__form" action="">
@@ -70,8 +76,8 @@ const Register = () => {
               {/* <!-- end of right side form --> */}
             </div>
           </form>
-        </div>
-      </section>
+        </RegisterWrapper>
+      </RegisterSection>
       {/* <!-- end of Register section --> */}
     </>
   );

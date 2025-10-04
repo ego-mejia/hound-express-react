@@ -21,7 +21,7 @@ export const Main = styled.section`
 `;
 
 export const Wrapper = styled.div`
-    ${wrapperMixin}
+    ${wrapperMixin};
     /* background-color: red; */
     h1{
         max-width: 980px;

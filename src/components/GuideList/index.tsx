@@ -1,11 +1,22 @@
 import React from "react";
 
+// Style
+import {
+  GuideListSection,
+  GuideListWrapper,
+  GuideListTableContainer,
+  EditListButton,
+  StateInProgress,
+  StateDelivered,
+  StatePending,
+} from "./styles";
+
 const GuideList = () => {
   return (
-    <section class="list">
-      <div class="wrapper">
+    <GuideListSection>
+      <GuideListWrapper>
         <h3>Lista de guías</h3>
-        <div class="table-container">
+        <GuideListTableContainer>
           <table>
             <thead>
               <tr>
@@ -20,39 +31,39 @@ const GuideList = () => {
             <tbody>
               <tr>
                 <td>1234567890</td>
-                <td class="estado-en-transito">En tránsito</td>
+                <StateInProgress>En tránsito</StateInProgress>
                 <td>Monterrey, MX</td>
                 <td>Michigan, USA</td>
                 <td>03.18.2025</td>
                 <td>
-                  <button class="btn-editar">Editar</button>
+                  <EditListButton>Editar</EditListButton>
                 </td>
               </tr>
               <tr>
                 <td>0987654321</td>
-                <td class="estado-entregado">Entregado</td>
+                <StateDelivered>Entregado</StateDelivered>
                 <td>CDMX, MX</td>
                 <td>Los Ángeles, USA</td>
                 <td>03.15.2025</td>
                 <td>
-                  <button class="btn-editar">Editar</button>
+                  <EditListButton>Editar</EditListButton>
                 </td>
               </tr>
               <tr>
                 <td>1122334455</td>
-                <td class="estado-pendiente">Pendiente</td>
+                <StatePending> Pendiente</StatePending>
                 <td>Guadalajara, MX</td>
                 <td>Texas, USA</td>
                 <td>03.12.2025</td>
                 <td>
-                  <button class="btn-editar">Editar</button>
+                  <EditListButton>Editar</EditListButton>
                 </td>
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
-    </section>
+        </GuideListTableContainer>
+      </GuideListWrapper>
+    </GuideListSection>
   );
 };
 

@@ -62,7 +62,7 @@ export const StateDelivered = styled.td`
 `;
 
 export const EditListButton = styled.button`
-    background-color: ${({ theme }) => theme.colors.darkBlue};
+    background-color: ${({ theme }) => theme.colors.borderGray};
     color: white;
     border: none;
     padding: 6px 12px;

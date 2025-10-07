@@ -20,6 +20,18 @@ export const Main = styled.section`
     background-repeat: no-repeat; /* Evita repeticiones */
     padding: 0 80px;
 
+    @media (max-width: 1280px) {
+        padding: 0 20px;
+        
+        h1{
+            margin-bottom: 10px;
+        }
+    }
+    @media (max-width: 1024px) {        
+        height: 550px;
+        margin-top: 70px;
+    }
+}
     
 `;
 
@@ -51,6 +63,23 @@ export const Wrapper = styled.div`
         bottom: -74.24px;
         transform: rotate(-7deg);
         right: -80px;
+    }
+    
+    @media (max-width: 1280px) {        
+        img{
+            right: -10px;
+        }
+    }
+        
+    @media (max-width: 1024px) {
+        padding-top: 25px;
+    
+        img{
+            max-width: 650px;
+            /* width: 60vw; */
+            right: 0px;
+            bottom: -50px;
+        }
     }
 `;
 

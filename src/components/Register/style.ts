@@ -4,7 +4,11 @@ import { bgDebug } from "../../styles/mixins";
 export const RegisterSection = styled.section`
     ${bgDebug('transparent','khaki')};
     padding: 0 80px;
-    ;
+    
+    @media (max-width: 1280px) {
+        padding: 0 20px;
+    }
+}
     `;
 
 export const RegisterWrapper = styled.div`

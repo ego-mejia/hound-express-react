@@ -6,13 +6,14 @@ import { bgDebug } from "../../styles/mixins";
 export const GuideListSection = styled.section`
     ${bgDebug('transparent','cyan')};
    padding: 0 80px;
+   margin-bottom: 50px;
 `;
 
 export const GuideListWrapper = styled.div`
     ${bgDebug('transparent','yellow')};
         display: flex;
         flex-direction: column;
-        max-width: 1200px;
+        max-width: 1400px;
         width: 100%;
         padding-top: 60px;
         margin: 0 auto;

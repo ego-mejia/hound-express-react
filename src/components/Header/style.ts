@@ -60,6 +60,10 @@ export const RightContainer = styled.div`
         width: 100%;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 760px) {
+          display: none;
+        }
 `;
 
 export const SearchInput = styled.div`
@@ -103,4 +107,8 @@ export const SearchInput = styled.div`
                 width: 24px;
             }
         }
+
+    @media (max-width: 1024px) {
+       display: none;
+    }
 `;

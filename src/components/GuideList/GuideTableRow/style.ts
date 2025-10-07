@@ -29,6 +29,13 @@ export const EditListButton = styled.button`
     cursor: pointer;
     border-radius: 4px;
     font-size: 14px;
+
+    @media (max-width: 600px) {
+      .btn-editar {
+          padding: 4px 8px; /* Botón más pequeño */
+          font-size: 12px;
+      }
+  }
 `;
 
 

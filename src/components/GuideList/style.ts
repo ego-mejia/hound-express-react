@@ -4,9 +4,19 @@ import styled from "styled-components";
 import { bgDebug } from "../../styles/mixins";
 
 export const GuideListSection = styled.section`
-    ${bgDebug('transparent','cyan')};
+${bgDebug('transparent','cyan')};
    padding: 0 80px;
    margin-bottom: 50px;
+   
+    @media (max-width: 1280px) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 600px) {
+        th, td {
+            padding: 8px; /* Reduce el padding en pantallas pequeñas */
+        }
+    }
 `;
 
 export const GuideListWrapper = styled.div`

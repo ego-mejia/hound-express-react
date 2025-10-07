@@ -1,13 +1,57 @@
+// Components
+import GuideTableRow from "./GuideTableRow";
+
 // Style
 import {
   GuideListSection,
   GuideListWrapper,
   GuideListTableContainer,
-  EditListButton,
-  StateCell,
-} from "./styles";
+} from "./style";
 
 const GuideList = () => {
+  const guidesList = [
+    {
+      id: "1234567890",
+      status: {
+        value: "En tránsito",
+        code: "inProgress",
+      },
+      origin: "Monterrey, MX",
+      destination: "Michigan, USA",
+      date: "2025-03-18",
+    },
+    {
+      id: "0987654321",
+      status: {
+        value: "Entregado",
+        code: "delivered",
+      },
+      origin: "CDMX, MX",
+      destination: "Los Ángeles, USA",
+      date: "2025-03-15",
+    },
+    {
+      id: "1122334455",
+      status: {
+        value: "Pendiente",
+        code: "pending",
+      },
+      origin: "Guadalajara, MX",
+      destination: "Texas, USA",
+      date: "2025-03-12",
+    },
+    {
+      id: "34623554987",
+      status: {
+        value: "Pendiente",
+        code: "pending",
+      },
+      origin: "Monterrey, MX",
+      destination: "New York, USA",
+      date: "2025-10-06",
+    },
+  ] as const;
+
   return (
     <GuideListSection>
       <GuideListWrapper>
@@ -24,38 +68,21 @@ const GuideList = () => {
                 <th>Acción</th>
               </tr>
             </thead>
+            {/* Start of Table body */}
             <tbody>
-              <tr>
-                <td>1234567890</td>
-                <StateCell status="inProgress">En tránsito</StateCell>
-                <td>Monterrey, MX</td>
-                <td>Michigan, USA</td>
-                <td>03.18.2025</td>
-                <td>
-                  <EditListButton>Editar</EditListButton>
-                </td>
-              </tr>
-              <tr>
-                <td>0987654321</td>
-                <StateCell status="delivered">Entregado</StateCell>
-                <td>CDMX, MX</td>
-                <td>Los Ángeles, USA</td>
-                <td>03.15.2025</td>
-                <td>
-                  <EditListButton>Editar</EditListButton>
-                </td>
-              </tr>
-              <tr>
-                <td>1122334455</td>
-                <StateCell status="pending"> Pendiente</StateCell>
-                <td>Guadalajara, MX</td>
-                <td>Texas, USA</td>
-                <td>03.12.2025</td>
-                <td>
-                  <EditListButton>Editar</EditListButton>
-                </td>
-              </tr>
+              {guidesList.map((guide) => (
+                <GuideTableRow
+                  key={guide.id}
+                  id={guide.id}
+                  statusCode={guide.status.code}
+                  statusValue={guide.status.value}
+                  origin={guide.origin}
+                  destination={guide.destination}
+                  date={guide.date}
+                />
+              ))}
             </tbody>
+            {/* End of Table body */}
           </table>
         </GuideListTableContainer>
       </GuideListWrapper>

@@ -26,12 +26,19 @@ export const Navbar = styled.nav`
       color: white;
       font-size: 20px;
     }
-
+  @media (max-width: 768px) {
+    height: 70px;
+    padding: 20px 0;
+  }
 `;
 
 export const Logo = styled.img`
   max-width: 271.98px;
   width: 100%;
+
+    @media (max-width: 768px) {
+      width: 70%;
+  }
 `;
 
 export const NavbarLinks = styled.ul`
@@ -61,7 +68,7 @@ export const RightContainer = styled.div`
         align-items: center;
         justify-content: space-between;
 
-        @media (max-width: 760px) {
+        @media (max-width: 768px) {
           display: none;
         }
 `;

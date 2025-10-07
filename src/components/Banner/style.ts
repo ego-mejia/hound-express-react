@@ -81,6 +81,12 @@ export const Wrapper = styled.div`
             bottom: -50px;
         }
     }
+    
+    @media (max-width: 768px) {
+        img{
+            bottom: 0px;
+        }
+}
 `;
 
 export const TrackFormContainer = styled.div`

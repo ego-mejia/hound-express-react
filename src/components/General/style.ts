@@ -26,17 +26,30 @@ export const CardsContainer = styled.div`
 `;
 
 export const Card = styled.div`
+  ${bgDebug('transparent','cyan')};
   max-width: 290px;
   width: 100%;
   display: flex;
   height: 156px;
   position: relative;
-  background-color: white;
   margin-right: 38px;
   border-radius: 15px;
   /* Reemplaza la variable Sass por tu variable de theme */
   border: 1px solid ${({ theme }) => theme.colors.borderGray}; 
-`;
+
+  @media (max-width: 768px) {
+    height: 120px;
+    margin-right: 15px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    min-height: 80px;
+    max-height: 100px;
+    justify-content: space-between;
+  }
+
+  `;
 
 export const Value = styled.p` /* Asumo que es un <p> o <div>, no importa */
   position: relative;
@@ -46,6 +59,17 @@ export const Value = styled.p` /* Asumo que es un <p> o <div>, no importa */
   top: 35px;
   left: 18px;
   font-weight: bold;
+
+  @media (max-width: 768px) {
+    top: 15px;
+    // font-size: 22px;
+    // left: 10px;
+  }
+    @media (max-width: 480px) {
+    top: 5px;
+    font-size: 22px;
+    left: 10px;
+  }
 `;
 
 export const Title = styled.h2` /* Asumo que es un <h2> o <p> */
@@ -56,4 +80,15 @@ export const Title = styled.h2` /* Asumo que es un <h2> o <p> */
   color: ${({ theme }) => theme.colors.mediumGray};
   left: 18px;
   bottom: 28px;
+  
+  @media (max-width: 768px) {
+    bottom: 20px;
+  }
+    @media (max-width: 480px) {
+    position: relative;
+    font-size: clamp(12px, 2.5vw, 14px);
+    left: 10px;
+    bottom: 10px;
+  }
 `;
+

@@ -1,14 +1,10 @@
-import React from "react";
-
 // Style
 import {
   GuideListSection,
   GuideListWrapper,
   GuideListTableContainer,
   EditListButton,
-  StateInProgress,
-  StateDelivered,
-  StatePending,
+  StateCell,
 } from "./styles";
 
 const GuideList = () => {
@@ -31,7 +27,7 @@ const GuideList = () => {
             <tbody>
               <tr>
                 <td>1234567890</td>
-                <StateInProgress>En tránsito</StateInProgress>
+                <StateCell status="inProgress">En tránsito</StateCell>
                 <td>Monterrey, MX</td>
                 <td>Michigan, USA</td>
                 <td>03.18.2025</td>
@@ -41,7 +37,7 @@ const GuideList = () => {
               </tr>
               <tr>
                 <td>0987654321</td>
-                <StateDelivered>Entregado</StateDelivered>
+                <StateCell status="delivered">Entregado</StateCell>
                 <td>CDMX, MX</td>
                 <td>Los Ángeles, USA</td>
                 <td>03.15.2025</td>
@@ -51,7 +47,7 @@ const GuideList = () => {
               </tr>
               <tr>
                 <td>1122334455</td>
-                <StatePending> Pendiente</StatePending>
+                <StateCell status="pending"> Pendiente</StateCell>
                 <td>Guadalajara, MX</td>
                 <td>Texas, USA</td>
                 <td>03.12.2025</td>

@@ -36,7 +36,14 @@ export const FormContainer = styled.form`
     display: flex;
     max-width: 860px;
     justify-content: center;
-    `;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        max-width: 860px;
+    }
+
+`;
 
 export const FormContainerLeft = styled.form`
     ${bgDebug('transparent','fuchsia')};
@@ -44,6 +51,9 @@ export const FormContainerLeft = styled.form`
     flex-direction: column;
     width: 100%;
 
+    @media (max-width: 768px) {
+        max-width: 860px;
+    }
 `;
 
 export const FormContainerRight = styled.form`
@@ -53,6 +63,11 @@ export const FormContainerRight = styled.form`
     width: 100%;
     justify-content: end;
     margin-left: 10px;
+
+    @media (max-width: 768px) {
+        margin-left: 0px;
+        max-width: 860px;
+    }
 `;
 export const StateDateFlexbox = styled.form`
     display: flex;
@@ -63,6 +78,10 @@ export const StateDateFlexbox = styled.form`
     /* FormElement{
         max-width: 225px;
     }    */
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 export const FormElement = styled.form`
     ${bgDebug('transparent','blue')};
@@ -116,6 +135,13 @@ export const FormElement = styled.form`
     
         color: black;
     } */
+   
+    @media (max-width: 768px) {
+        max-width: 860px;
+        input {
+            max-width: 860px;
+        }
+    }
 `;
 
 export const DateSelectorInput = styled.input`

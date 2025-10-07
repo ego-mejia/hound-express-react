@@ -25,7 +25,12 @@ export const FooterWrapper = styled.div`
     align-items: center; /* Alinea verticalmente */
     flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
 
-
+  /* Ajuste para pantallas pequeñas */
+  @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
 `;
 
 export const LogoLink = styled.a`
@@ -50,11 +55,20 @@ export const FooterTextContainer = styled.div`
 
   /* Ajuste para responsive si quieres */
   @media (max-width: 768px) {
-    gap: 8px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
   }
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
   gap: 15px;
+  /* Ajuste para responsive si quieres */
+  @media (max-width: 768px) {
+      justify-content: center;
+      // flex-direction: column;
+      // align-items: center;
+      // gap: 10px;
+  }
 `;

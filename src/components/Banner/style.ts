@@ -9,7 +9,7 @@ export const Main = styled.section`
 
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 0;
     position: relative;
     /* padding-top: 50px; */
     align-items: center;
@@ -29,13 +29,11 @@ export const Main = styled.section`
     }
     @media (max-width: 1024px) {        
         height: 550px;
-        margin-top: 70px;
     }
     @media (max-width: 480px) {
         padding: 0 20px;
         height: auto;
     }
-}
     
 `;
 
@@ -90,16 +88,16 @@ export const Wrapper = styled.div`
         img{
             bottom: 0px;
         }
-
+    }
     @media (max-width: 480px) {
         padding-top: 10px;
 
-    img{
-        position: static;
-        margin: 0 auto;
-        // margin-top: 10px;
-    }        
-    
+        img{
+            position: static;
+            margin: 0 auto;
+            // margin-top: 10px;
+        }        
+    }
 `;
 
 export const TrackFormContainer = styled.div`

@@ -64,7 +64,7 @@ export const Wrapper = styled.div`
         width: 60vw;
         bottom: -74.24px;
         transform: rotate(-7deg);
-        right: -80px;
+        right: -65px;
     }
     
     @media (max-width: 1280px) {        

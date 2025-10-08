@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Pages
 import Home from "./pages/Home";
@@ -13,6 +13,14 @@ import { theme } from "./styles/theme";
 import { GlobalStyle } from "./styles/GlobalStyle";
 
 function App() {
+  const [guides, setGuides] = useState([]);
+
+  const [history, setHistory] = useState([]);
+
+  useEffect(() => {
+    console.log("El estado de guías ha cambiado:", guides);
+  }, [guides]);
+
   return (
     <>
       <ThemeProvider theme={theme}>
